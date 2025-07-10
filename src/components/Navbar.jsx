@@ -5,12 +5,15 @@ import { FaCaretDown } from "react-icons/fa";
 import { IoCartOutline } from "react-icons/io5";
 import { CgClose } from 'react-icons/cg'
 import { SignedIn, SignedOut, SignInButton, UserButton } from "@clerk/clerk-react";
+import { useCart } from "../context/CartContext";
 
 const Navbar = ({location,getLocation,openDropdown, setOpenDropdown}) => {
   
+  const {cartItem} = useCart()
   const toggleDropdown = ()=>{
         setOpenDropdown(!openDropdown)
   }
+
   return (
     <div className="bg-white py-3 shadow-2xl">
       <div className="max-w-6xl mx-auto flex justify-between items-center">
@@ -94,7 +97,7 @@ const Navbar = ({location,getLocation,openDropdown, setOpenDropdown}) => {
           <Link to={"/cart"} className="relative">
             <IoCartOutline className="h-7 w-7" />
             <span className="bg-red-500 px-2 rounded-full absolute -top-3 -right-3 text-white">
-              0
+              {cartItem.length}
             </span>
           </Link>
 
