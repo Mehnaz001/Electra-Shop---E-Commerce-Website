@@ -12,3 +12,11 @@
   width: 40px;
   margin: 1px;
 }
+
+/* input colours */
+input {
+  background-color: #ffffff;
+  accent-color: red;
+  border: 1px solid #ccc;
+  color: #333;
+}
