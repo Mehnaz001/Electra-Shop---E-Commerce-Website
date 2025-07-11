@@ -4,8 +4,8 @@ import FilterSection from '../components/FilterSection'
 import Loading from "../assets/Loading4.webm"
 import ProductCard from '../components/ProductCard'
 import Pagination from '../components/Pagination'
-// import Lottie from 'lottie-react'
-// import notfound from "../assets/notfound.json"
+import Lottie from 'lottie-react'
+import notfound from "../assets/notfound.json"
 
 const Products = () => {
   const { data, fetchAllProducts } = getData()
@@ -28,6 +28,7 @@ const Products = () => {
 
   }
   const handleBrandChange = (e) => {
+    console.log("Selected brand:", e.target.value)
     setBrand(e.target.value)
     setPage(1)
     setOpenFilter(false)
@@ -70,8 +71,7 @@ const Products = () => {
                     </div>
                   ) : (
                     <div className='flex justify-center items-center md:h-[600px] md:w-[900px] mt-10'>
-                           {/* <Lottie animationData={notfound} classID='w-[500px]'/> */}
-                           Not Found
+                           <Lottie animationData={notfound} classID='w-[500px]'/>
                     </div>
                   )
                 }
