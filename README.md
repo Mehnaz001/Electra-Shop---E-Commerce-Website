@@ -1,12 +1,76 @@
-# React + Vite
+## 📦 Electra – E-Commerce Website 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Electra** is a modern, responsive e-commerce frontend built using **React.js**. It features product listings, filtering, cart functionality, and an elegant UI — perfect for building a scalable online store interface.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### 🔗 Live Demo
 
-## Expanding the ESLint configuration
+[🌐 Visit Electra ](https://electra-e-commerce-website.netlify.app/)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+### 🚀 Tech Stack
+
+* ⚛️ React.js
+* 🎨 Tailwind CSS
+* 🧠 Redux Toolkit (for state management)
+* 📦 React Router DOM
+* 💡 Vite (or CRA if you're using that)
+
+---
+
+### 📁 Folder Structure
+
+```
+electra-frontend/
+├── public/
+├── src/
+│   ├── assets/
+│   ├── components/
+│   ├── pages/
+│   ├── redux/
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── index.css
+├── .gitignore
+├── package.json
+└── README.md
+```
+
+---
+
+### 🔧 Features
+
+* 🛒 Add-to-cart functionality
+* 🧩 Product filtering & searching
+* 📱 Fully responsive design
+* ⚙️ State management with Redux
+* 📦 Modular & reusable components
+
+---
+
+
+### 🛠️ Installation
+
+```bash
+# Clone the repo
+git clone https://github.com/yourusername/electra-frontend.git
+
+# Navigate to project directory
+cd electra-frontend
+
+# Install dependencies
+npm install
+
+# Run the app
+npm run dev
+```
+
+---
+
+### ✨ Upcoming Features
+
+* ✅ Backend integration (Node.js + MongoDB)
+* 💳 Payment gateway
+* 📈 Order management dashboard
