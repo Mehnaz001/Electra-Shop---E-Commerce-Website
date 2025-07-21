@@ -14,9 +14,9 @@
 
 * ⚛️ React.js
 * 🎨 Tailwind CSS
-* 🧠 Redux Toolkit (for state management)
+* 🧠 Context API
 * 📦 React Router DOM
-* 💡 Vite (or CRA if you're using that)
+* 💡 Vite 
 
 ---
 
