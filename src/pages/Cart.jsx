@@ -28,7 +28,7 @@ const Cart = ({location, getLocation}) => {
                     <img src={item.image} alt={item.title} className='w-20 h-20 rounded-md' />
                     <div>
                       <h1 className='md:w-[300px] line-clamp-2 '>{item.title}</h1>
-                      <p className='text-red-500 font-semibold text-lg'>${item.price}</p>
+                      <p className='text-red-500 font-semibold text-lg'>₹{item.price}</p>
                     </div>
                   </div>
                   <div className='bg-red-500 text-white flex gap-4 p-2 rounded-md font-bold text-xl'>
@@ -85,20 +85,20 @@ const Cart = ({location, getLocation}) => {
                 <h1 className='text-gray-800 font-bold text-xl'>Bill details</h1>
                 <div className='flex justify-between items-center'>
                   <h1 className='flex gap-1 items-center text-gray-700'><span><LuNotebookText /></span>Items total</h1>
-                  <p>${totalPrice}</p>
+                  <p>₹{totalPrice}</p>
                 </div>
                 <div className='flex justify-between items-center'>
                   <h1 className='flex gap-1 items-center text-gray-700'><span><MdDeliveryDining /></span>Delivery Charge</h1>
-                  <p className='text-red-500 font-semibold'><span className='text-gray-600 line-through'>$25</span> FREE</p>
+                  <p className='text-red-500 font-semibold'><span className='text-gray-600 line-through'>₹25</span> FREE</p>
                 </div>
                 <div className='flex justify-between items-center'>
                   <h1 className='flex gap-1 items-center text-gray-700'><span><GiShoppingBag /></span>Handling Charge</h1>
-                  <p className='text-red-500 font-semibold'>$5</p>
+                  <p className='text-red-500 font-semibold'>₹5</p>
                 </div>
                 <hr  className='text-gray-200 mt-2'/>
                 <div className='flex justify-between items-center'>
                   <h1 className='font-semibold text-lg'>Grand total</h1>
-                  <p className='font-semibold text-lg'>${totalPrice + 5}</p>
+                  <p className='font-semibold text-lg'>₹{totalPrice + 5}</p>
                 </div>
                 <div>
                   <h1 className='font-semibold text-gray-700 mb-3 mt-7'>Apply Promo Code</h1>
