@@ -13,7 +13,7 @@ const SingleProduct = () => {
 
     const getSingleProduct = async () => {
         try {
-            const res = await axios.get(`https://fakestoreapi.in/api/products/₹{params.id}`)
+            const res = await axios.get(`https://fakestoreapi.in/api/products/${params.id}`)
             const product = res.data.product;
             setSingleProduct(product)
             console.log(product);
