@@ -14,7 +14,7 @@ const Cart = ({location, getLocation}) => {
   const navigate = useNavigate()
   
 
-  const totalPrice = cartItem.reduce((total, item) => total + item.price, 0)
+  const totalPrice = cartItem.reduce((total, item) => total + item.price*83, 0)
   return (
     <div className='mt-10 max-w-6xl mx-auto mb-5 px-4 md:px-0'>
       {
