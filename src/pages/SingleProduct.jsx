@@ -13,7 +13,7 @@ const SingleProduct = () => {
 
     const getSingleProduct = async () => {
         try {
-            const res = await axios.get(`https://fakestoreapi.in/api/products/${params.id}`)
+            const res = await axios.get(`https://fakestoreapi.in/api/products/₹{params.id}`)
             const product = res.data.product;
             setSingleProduct(product)
             console.log(product);
@@ -28,7 +28,7 @@ const SingleProduct = () => {
         getSingleProduct()
     }, [])
 
-    const OriginalPrice = Math.round(SingleProduct.price + (SingleProduct.price * SingleProduct.discount / 100))
+    const OriginalPrice = Math.round(SingleProduct.price*83 + ((SingleProduct.price*83) * SingleProduct.discount / 100))
 
     return (
         <>
