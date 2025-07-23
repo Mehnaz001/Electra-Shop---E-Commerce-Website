@@ -28,7 +28,7 @@ const Cart = ({location, getLocation}) => {
                     <img src={item.image} alt={item.title} className='w-20 h-20 rounded-md' />
                     <div>
                       <h1 className='md:w-[300px] line-clamp-2 '>{item.title}</h1>
-                      <p className='text-red-500 font-semibold text-lg'>₹{item.price}</p>
+                      <p className='text-red-500 font-semibold text-lg'>₹{item.price*83}</p>
                     </div>
                   </div>
                   <div className='bg-red-500 text-white flex gap-4 p-2 rounded-md font-bold text-xl'>
